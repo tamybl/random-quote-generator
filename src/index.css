@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,39 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App #quote-box {
+  max-width: 600px;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: .5rem;
+  background: #fff;
+}
+.App #quote-box * {
+  color: #fff;
+}
+
+.App #quote-box p {
+  text-align: right;
+}
+
+.wrapper-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper-footer button {
+  border: none;
+  padding: .5rem 1rem;
+  cursor: pointer;
 }
